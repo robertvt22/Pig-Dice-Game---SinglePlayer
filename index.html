@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>Pig Dice Game - SinglePlayer</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="game-container">
+            <div class="game-container-content game-container-contentLeft"></div>
+
+            <div class="game-container-content game-container-contentMiddle">
+                <h1 class="game-titlePlayer">PLAYER-1</h1>
+                <h3 class="game-scoreTotal">0</h3>
+                <div class="game-dice">
+                    <div class="game-dice-img"></div>
+                </div>
+                <div class="game-scoreBoxes">
+                    <div class="game-scoreBox game-scoreBoxMoves">
+                        <h4 class="game-scoreBox-label game-scoreBoxMoves-label">Moves Left</h4>
+                        <h5 class="game-scoreBox-input game-scoreBoxMoves-input">10</h5>
+                    </div>
+                    <div class="game-scoreBox game-scoreBoxCurrent">
+                        <h4 class="game-scoreBox-label game-scoreBoxCurrent-label">Current Score</h4>
+                        <h5 class="game-scoreBox-input game-scoreBoxCurrent-input">0</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="game-container-content game-container-contentRight">
+                <div class="game-container-contentRight-top">
+                    <h2 class="game-title">Create a New Game</h2>
+                    <div class="game-box-btn">
+                        <button class="btn btnNewGame">
+                            <i class="fa-solid fa-repeat"></i>
+                            <h3 class="btn-title btn-titleNewGame">New Game</h3>
+                        </button>
+                    </div>
+                </div>
+                <div class="game-container-contentRight-line"></div>
+                <div class="game-container-contentRight-bottom">
+                    <h2 class="game-title">Roll or Hold</h2>
+                    <div class="game-buttons">
+                        <div class="game-box-btn">
+                            <button class="btn btnRollDice">
+                                <i class="fa-solid fa-dice"></i>
+                                <h3 class="btn-title btn-titleRollDice">Roll Dice</h3>
+                            </button>
+                        </div>
+                        <div class="game-box-btn">
+                            <button class="btn btnHoldDice">
+                                <i class="fa-solid fa-hand"></i>
+                                <h3 class="btn-title btn-titleHoldDice">Hold Dice</h3>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script type="module" src="main.js"></script>
+
+</body>
+
+</html>
