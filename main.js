@@ -10,7 +10,7 @@ const boxScoreMoves = document.querySelector(".game-scoreBoxMoves-input");
 const boxScoreCurrent = document.querySelector(".game-scoreBoxCurrent-input");
 
 let scoreTotal = 0;
-let scoreMoves = 2;
+let scoreMoves = 10;
 let scoreCurrent = 0;
 let hasRolled = false;
 
@@ -21,7 +21,7 @@ btnNewGame.addEventListener("click", () => {
     boxScoreTotal.innerHTML = scoreTotal;
     scoreCurrent = 0;
     boxScoreCurrent.innerHTML = scoreCurrent;
-    scoreMoves = 2;
+    scoreMoves = 10;
     boxScoreMoves.innerHTML = scoreMoves;
     hasRolled = false;
     boxDice.classList.remove("active");
